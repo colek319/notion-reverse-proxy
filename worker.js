@@ -2,7 +2,7 @@ const API_END_POINT = "https://api.notion.com";
 
 export default {
     async fetch(request, env) {
-        return await handleRequest(request)
+        return await handleRequest(request, env)
     }
 }
 
@@ -20,8 +20,7 @@ function handleOptions(request) {
     });
 }
 
-async function handleRequest(request) {
-    console.log(NOTION_SECRET);
+async function handleRequest(request, env) {
     if (request.method === "OPTIONS") {
         return handleOptions(request);
     }
@@ -33,7 +32,7 @@ async function handleRequest(request) {
     let notionResponse = await fetch(requestUrl, {
         body: request.body,
         headers: {
-            "Authorization": `Bearer ${NOTION_SECRET}`,
+            "Authorization": `Bearer ${env.NOTION_SECRET}`,
             "Notion-Version": "2022-06-28",
         },
         method: request.method
