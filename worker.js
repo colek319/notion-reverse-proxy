@@ -18,7 +18,7 @@ const upstream = 'api.notion.com';
 const upstream_mobile = null;
 
 // Custom pathname for the upstream website ('/' will work for most scenarios)
-const upstream_path = '/';
+const upstream_path = '';
 
 // Set it to TRUE to allow the default upstream to be overridden with a customizable GET parameter (see `upstream_get_parameter` below), FALSE to prevent that.
 // WARNING: this feature will allow third-parties to replace this proxy's default upstream with an upstream of their choice: activate it only if you know 
