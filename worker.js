@@ -208,6 +208,7 @@ async function fetchAndApply(request) {
             }
         }
 
+        console.log("Making Request: ", url.href, params);
         let original_response = await fetch(url.href, params);
 
         connection_upgrade = new_request_headers.get("Upgrade");
