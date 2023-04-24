@@ -11,7 +11,7 @@
 // ----------------------------------------------------------------------------------
 
 // The hostname of the upstream website to proxy(example: `www.google.com`).
-const upstream = 'www.google.com';
+const upstream = 'api.notion.com';
 
 // The hostname of the upstream website to proxy for requests coming from mobile devices(example: `www.google.com`).
 // if the upstream website doesn't have a dedicated hostname for mobile devices, you can set it to NULL.
