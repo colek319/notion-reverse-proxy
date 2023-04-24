@@ -33,6 +33,7 @@ async function handleRequest(request) {
         body: request.body,
         headers: {
             "Authorization": "Bearer " + NOTION_SECRET,
+            "Notion-Version": "2022-06-28",
         },
         method: request.method
     });
