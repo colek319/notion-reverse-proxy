@@ -10,7 +10,7 @@ function getCorsHeaders(request) {
     return {
         "Access-Control-Allow-Origin": request.headers.get("Origin"),
         "Access-Control-Allow-Methods": "GET, HEAD, POST, PUT, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Notion-Version",
     };
 }
 
